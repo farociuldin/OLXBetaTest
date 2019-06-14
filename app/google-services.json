@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178762101702",
+    "firebase_url": "https://olx-app-teste.firebaseio.com",
+    "project_id": "olx-app-teste",
+    "storage_bucket": "olx-app-teste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178762101702:android:f4b961ec75fc6101",
+        "android_client_info": {
+          "package_name": "farociuldin.cursoandroid.olx.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178762101702-ie2haiht1l8ck7l11777eih4ua4vchm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "farociuldin.cursoandroid.olx.com",
+            "certificate_hash": "e2a8741aa2620349852d068f72a31e9273b632c3"
+          }
+        },
+        {
+          "client_id": "178762101702-to3mcb1cr1idcp3uokbvp213e8u3b575.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj2vX9Z27aHEcPfz76mRvHRHdZbTe7cmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178762101702-to3mcb1cr1idcp3uokbvp213e8u3b575.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
