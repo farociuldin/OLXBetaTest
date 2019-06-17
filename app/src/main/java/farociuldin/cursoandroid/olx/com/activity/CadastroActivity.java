@@ -2,6 +2,7 @@ package farociuldin.cursoandroid.olx.com.activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
+import dmax.dialog.SpotsDialog;
 import farociuldin.cursoandroid.olx.com.R;
 import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
 
@@ -26,6 +28,7 @@ public class CadastroActivity extends AppCompatActivity {
     private Button botaoAcessar;
     private EditText campoEmail, campoSenha;
     private Switch tipoAcesso;
+    private AlertDialog dialog;
 
     private FirebaseAuth autenticacao;
 
@@ -37,9 +40,13 @@ public class CadastroActivity extends AppCompatActivity {
         inicializaComponentes();
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
+
+
         botaoAcessar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
 
                 String email = campoEmail.getText().toString();
                 String senha = campoSenha.getText().toString();
@@ -89,6 +96,7 @@ public class CadastroActivity extends AppCompatActivity {
 
                         }else {//Login
 
+
                             autenticacao.signInWithEmailAndPassword(
                                     email, senha
                             ).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -107,6 +115,8 @@ public class CadastroActivity extends AppCompatActivity {
                                                 "Erro ao fazer login : " + task.getException() ,
                                                 Toast.LENGTH_SHORT).show();
                                     }
+
+
 
                                 }
                             });

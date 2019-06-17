@@ -23,8 +23,11 @@
         android:id="@+id/textTituloDetalhe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="TextView"
-        android:textSize="18sp" />
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textPrecoDetalhe"
