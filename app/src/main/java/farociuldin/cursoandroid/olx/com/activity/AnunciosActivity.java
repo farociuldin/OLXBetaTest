@@ -252,7 +252,7 @@ public class AnunciosActivity extends AppCompatActivity {
 
         dialog = new SpotsDialog.Builder()
                 .setContext( this )
-                .setMessage("Recuperando anúncios")
+                .setMessage("Recuperando Founds")
                 .setCancelable( false )
                 .build();
         dialog.show();

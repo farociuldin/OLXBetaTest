@@ -107,7 +107,7 @@ public class MeusAnunciosActivity extends AppCompatActivity {
 
         dialog = new SpotsDialog.Builder()
                 .setContext(this)
-                .setMessage("Carregando anúncios, caaalma!")
+                .setMessage("Carregando Founds, caaalma!")
                 .setCancelable(false)
                 .build();
         dialog.show();
