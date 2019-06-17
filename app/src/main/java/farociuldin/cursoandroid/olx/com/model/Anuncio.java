@@ -2,11 +2,12 @@ package farociuldin.cursoandroid.olx.com.model;
 
 import com.google.firebase.database.DatabaseReference;
 
+import java.io.Serializable;
 import java.util.List;
 
 import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
 
-public class Anuncio {
+public class Anuncio implements Serializable {
 
     private String idAnuncio;
     private String estado;
@@ -35,44 +36,40 @@ public class Anuncio {
 
         salvarAnuncioPublico();
 
-
     }
 
     public void salvarAnuncioPublico(){
 
-
         DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
                 .child("anuncios");
 
-        anuncioRef.child(getEstado())
-                .child(getCategoria())
-                .child(getIdAnuncio())
+        anuncioRef.child( getEstado() )
+                .child( getCategoria() )
+                .child( getIdAnuncio() )
                 .setValue(this);
-
 
     }
 
-    public void remover (){
+    public void remover(){
 
         String idUsuario = ConfiguracaoFirebase.getIdUsuario();
         DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
                 .child("meus_anuncios")
                 .child( idUsuario )
-                .child(getIdAnuncio());
+                .child( getIdAnuncio() );
 
         anuncioRef.removeValue();
         removerAnuncioPublico();
 
     }
 
-    public void removerAnuncioPublico (){
-
+    public void removerAnuncioPublico(){
 
         DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
                 .child("anuncios")
-                .child(getEstado())
-                .child(getCategoria())
-                .child(getIdAnuncio());
+                .child( getEstado() )
+                .child( getCategoria() )
+                .child( getIdAnuncio() );
 
         anuncioRef.removeValue();
 

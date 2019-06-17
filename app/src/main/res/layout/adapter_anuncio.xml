@@ -36,8 +36,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text='TV LCD 28" Full HD 4K'
-                android:textColor="#0A0A0A"
-                android:textSize="16sp" />
+                android:textColor="@color/colorOrangeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textPreco"
