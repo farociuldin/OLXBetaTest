@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.activity;
+package farociuldin.cursoandroid.foundit.com.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -7,10 +7,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.preference.DialogPreference;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,7 +22,6 @@ import android.widget.Toast;
 import com.blackcat.currencyedittext.CurrencyEditText;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.santalu.maskedittext.MaskEditText;
@@ -33,10 +30,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
-import farociuldin.cursoandroid.olx.com.helper.Permissoes;
-import farociuldin.cursoandroid.olx.com.model.Anuncio;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.foundit.com.helper.Permissoes;
+import farociuldin.cursoandroid.foundit.com.model.Anuncio;
 
 public class CadastrarAnuncioActivity extends AppCompatActivity
         implements View.OnClickListener {

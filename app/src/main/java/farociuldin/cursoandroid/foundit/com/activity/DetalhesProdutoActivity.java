@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.activity;
+package farociuldin.cursoandroid.foundit.com.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,8 +12,8 @@ import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.model.Anuncio;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.model.Anuncio;
 
 public class DetalhesProdutoActivity extends AppCompatActivity {
 

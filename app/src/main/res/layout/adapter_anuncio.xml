@@ -4,12 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/colorOrange"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:layout_margin="8dp"
+        android:layout_margin="2dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -36,8 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text='TV LCD 28" Full HD 4K'
-                android:textColor="@color/colorOrangeDark"
-                android:textSize="16sp"
+                android:textColor="#FFCA28"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -46,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="R$ 899,99"
+                android:textColor="#F8F8F5"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>

@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.helper;
+package farociuldin.cursoandroid.foundit.com.helper;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;

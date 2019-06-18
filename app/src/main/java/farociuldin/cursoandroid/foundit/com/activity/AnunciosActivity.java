@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.activity;
+package farociuldin.cursoandroid.foundit.com.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -27,11 +27,11 @@ import java.util.Collections;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.adapter.AdapterAnuncios;
-import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
-import farociuldin.cursoandroid.olx.com.helper.RecyclerItemClickListener;
-import farociuldin.cursoandroid.olx.com.model.Anuncio;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.adapter.AdapterAnuncios;
+import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.foundit.com.helper.RecyclerItemClickListener;
+import farociuldin.cursoandroid.foundit.com.model.Anuncio;
 
 public class AnunciosActivity extends AppCompatActivity {
 

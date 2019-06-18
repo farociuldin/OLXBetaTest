@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:background="@color/cast_intro_overlay_background_color"
     android:orientation="vertical"
     tools:context=".activity.AnunciosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:orientation="horizontal">
 
         <Button
@@ -27,8 +28,12 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:layout_weight="0"
-            android:text="|" />
+            android:text="|"
+            android:textColor="@color/colorOrange"
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/buttonCategoria"
@@ -44,5 +49,6 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerAnunciosPublicos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="8dp" />
 </LinearLayout>

@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com;
+package farociuldin.cursoandroid.foundit.com;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

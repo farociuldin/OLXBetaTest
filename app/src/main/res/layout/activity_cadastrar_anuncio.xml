@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cast_intro_overlay_background_color"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activity.CadastrarAnuncioActivity">
@@ -11,7 +12,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -40,17 +42,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:background="@color/colorOrange"
         android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinnerEstado"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Spinner
             android:id="@+id/spinnerCategoria"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>
@@ -67,7 +70,6 @@
         android:padding="10dp" />
 
 
-
     <com.blackcat.currencyedittext.CurrencyEditText
         android:id="@+id/editValor"
         android:layout_width="match_parent"
@@ -77,20 +79,18 @@
         android:ems="10"
         android:hint="Valor"
         android:inputType="textPersonName"
-        android:padding="10dp"
-        />
+        android:padding="10dp" />
 
     <com.santalu.maskedittext.MaskEditText
         android:id="@+id/editTelefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Telefone"
-        android:inputType="phone"
-        app:met_mask="(##) #####-####"
         android:layout_marginBottom="16dp"
         android:background="@drawable/bg_edit_text"
+        android:hint="Telefone"
+        android:inputType="phone"
         android:padding="10dp"
-        />
+        app:met_mask="(##) #####-####" />
 
     <EditText
         android:id="@+id/editDescricao"

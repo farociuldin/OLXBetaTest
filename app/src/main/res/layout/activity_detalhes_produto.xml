@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cast_intro_overlay_background_color"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".activity.DetalhesProdutoActivity">
@@ -50,7 +51,8 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_local_orange_24dp"
         android:padding="6dp"
-        android:text="SP" />
+        android:text="SP"
+        android:textColor="#FFFFFF" />
 
     <View
         android:id="@+id/view"
@@ -63,8 +65,9 @@
         android:id="@+id/textDescricaoDetalhe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:text="Descrição" />
+        android:paddingBottom="20dp"
+        android:text="Descrição"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button2"

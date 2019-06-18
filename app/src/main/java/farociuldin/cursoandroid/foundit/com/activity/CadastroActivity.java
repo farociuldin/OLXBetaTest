@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.activity;
+package farociuldin.cursoandroid.foundit.com.activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -19,9 +19,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
 
 public class CadastroActivity extends AppCompatActivity {
 

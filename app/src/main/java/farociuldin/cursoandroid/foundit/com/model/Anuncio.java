@@ -1,11 +1,11 @@
-package farociuldin.cursoandroid.olx.com.model;
+package farociuldin.cursoandroid.foundit.com.model;
 
 import com.google.firebase.database.DatabaseReference;
 
 import java.io.Serializable;
 import java.util.List;
 
-import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
 
 public class Anuncio implements Serializable {
 

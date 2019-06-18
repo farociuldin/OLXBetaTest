@@ -1,10 +1,9 @@
-package farociuldin.cursoandroid.olx.com.activity;
+package farociuldin.cursoandroid.foundit.com.activity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,16 +17,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.adapter.AdapterAnuncios;
-import farociuldin.cursoandroid.olx.com.helper.ConfiguracaoFirebase;
-import farociuldin.cursoandroid.olx.com.helper.RecyclerItemClickListener;
-import farociuldin.cursoandroid.olx.com.model.Anuncio;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.adapter.AdapterAnuncios;
+import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.foundit.com.helper.RecyclerItemClickListener;
+import farociuldin.cursoandroid.foundit.com.model.Anuncio;
 
 public class MeusAnunciosActivity extends AppCompatActivity {
 

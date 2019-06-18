@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.olx.com.adapter;
+package farociuldin.cursoandroid.foundit.com.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,8 +13,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import farociuldin.cursoandroid.olx.com.R;
-import farociuldin.cursoandroid.olx.com.model.Anuncio;
+import farociuldin.cursoandroid.foundit.com.R;
+import farociuldin.cursoandroid.foundit.com.model.Anuncio;
 
 public class AdapterAnuncios extends RecyclerView.Adapter<AdapterAnuncios.MyViewHolder> {
 
