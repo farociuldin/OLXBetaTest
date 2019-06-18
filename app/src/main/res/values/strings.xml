@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Found</string>
+    <string name="app_name">Found It</string>
     <string name="title_activity_meus_anuncios">Meus Founds</string>
 
     <string-array name="estados">
