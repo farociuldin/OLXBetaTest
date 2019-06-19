@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="farociuldin.cursoandroid.foundit.com">
+    package="farociuldin.cursoandroid.inkbrasil.com">
     <!-- Permissão internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Galeria/Camera -->
@@ -13,17 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="farociuldin.cursoandroid.foundit.com.activity.DetalhesProdutoActivity"
-            android:parentActivityName="farociuldin.cursoandroid.foundit.com.activity.AnunciosActivity">
-        </activity>
-        <activity android:name="farociuldin.cursoandroid.foundit.com.activity.CadastrarAnuncioActivity"
-            android:parentActivityName="farociuldin.cursoandroid.foundit.com.activity.MeusAnunciosActivity"/>
+        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.ForgotPassActivity"
+            android:label="@string/title_activity_recuperar_senha"></activity>
         <activity
-            android:name="farociuldin.cursoandroid.foundit.com.activity.MeusAnunciosActivity"
+            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.DetalhesProdutoActivity"
+            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity"></activity>
+        <activity
+            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.CadastrarAnuncioActivity"
+            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.MeusAnunciosActivity" />
+        <activity
+            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.MeusAnunciosActivity"
             android:label="@string/title_activity_meus_anuncios"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="farociuldin.cursoandroid.foundit.com.activity.AnunciosActivity"/>
-        <activity android:name="farociuldin.cursoandroid.foundit.com.activity.AnunciosActivity">
+            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.CadastroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +35,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </activity>
-        <activity android:name="farociuldin.cursoandroid.foundit.com.activity.CadastroActivity" />
+        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity" />
     </application>
 
 </manifest>

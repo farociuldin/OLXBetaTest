@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.foundit.com.activity;
+package farociuldin.cursoandroid.inkbrasil.com.activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -19,8 +19,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-import farociuldin.cursoandroid.foundit.com.R;
-import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.inkbrasil.com.R;
+import farociuldin.cursoandroid.inkbrasil.com.helper.ConfiguracaoFirebase;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -28,6 +28,8 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText campoEmail, campoSenha;
     private Switch tipoAcesso;
     private AlertDialog dialog;
+    private Button forgotPass;
+
 
     private FirebaseAuth autenticacao;
 
@@ -64,7 +66,7 @@ public class CadastroActivity extends AppCompatActivity {
                                     if( task.isSuccessful() ){
 
                                         Toast.makeText(CadastroActivity.this,
-                                                "Cadastro realizado com sucesso!",
+                                                "Cadastro realizado com sucesso! Bem-vindo a InkBrasil!",
                                                 Toast.LENGTH_SHORT).show();
 
                                         //Direcionar para a tela principal do App
@@ -136,6 +138,13 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CadastroActivity.this, ForgotPassActivity.class));
+            }
+        });
+
     }
 
     private void inicializaComponentes(){
@@ -143,6 +152,7 @@ public class CadastroActivity extends AppCompatActivity {
         campoSenha = findViewById(R.id.editCadastroSenha);
         botaoAcessar = findViewById(R.id.buttonAcesso);
         tipoAcesso = findViewById(R.id.switchAcesso);
+        forgotPass = findViewById(R.id.buttonForgotPassword);
     }
 
 }

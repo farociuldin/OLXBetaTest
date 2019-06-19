@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.foundit.com;
+package farociuldin.cursoandroid.inkbrasil.com;
 
 import org.junit.Test;
 

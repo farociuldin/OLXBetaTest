@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.foundit.com.activity;
+package farociuldin.cursoandroid.inkbrasil.com.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -27,11 +27,11 @@ import java.util.Collections;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.foundit.com.R;
-import farociuldin.cursoandroid.foundit.com.adapter.AdapterAnuncios;
-import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
-import farociuldin.cursoandroid.foundit.com.helper.RecyclerItemClickListener;
-import farociuldin.cursoandroid.foundit.com.model.Anuncio;
+import farociuldin.cursoandroid.inkbrasil.com.R;
+import farociuldin.cursoandroid.inkbrasil.com.adapter.AdapterAnuncios;
+import farociuldin.cursoandroid.inkbrasil.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.inkbrasil.com.helper.RecyclerItemClickListener;
+import farociuldin.cursoandroid.inkbrasil.com.model.Anuncio;
 
 public class AnunciosActivity extends AppCompatActivity {
 
@@ -252,7 +252,7 @@ public class AnunciosActivity extends AppCompatActivity {
 
         dialog = new SpotsDialog.Builder()
                 .setContext( this )
-                .setMessage("Recuperando Founds")
+                .setMessage("Carregando Ink's")
                 .setCancelable( false )
                 .build();
         dialog.show();
@@ -315,6 +315,7 @@ public class AnunciosActivity extends AppCompatActivity {
             case R.id.menu_sair :
                 autenticacao.signOut();
                 invalidateOptionsMenu();
+                startActivity( new Intent(getApplicationContext(), CadastroActivity.class));
                 break;
             case R.id.menu_anuncios :
                 startActivity(new Intent(getApplicationContext(),MeusAnunciosActivity.class));

@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.foundit.com.helper;
+package farociuldin.cursoandroid.inkbrasil.com.helper;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;

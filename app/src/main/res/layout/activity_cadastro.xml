@@ -15,7 +15,7 @@
         android:layout_height="100dp"
         android:layout_margin="20dp"
         android:paddingBottom="10dp"
-        app:srcCompat="@drawable/found_it" />
+        app:srcCompat="@drawable/padrao" />
 
     <EditText
         android:id="@+id/editCadastroEmail"
@@ -41,6 +41,17 @@
         android:inputType="textPassword"
         android:padding="10dp" />
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="Aceito os termos de cadastro"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Logar"
-            android:textColor="#FF9800"
+            android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <Switch
@@ -71,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cadastre-se"
-            android:textColor="#FF9800"
+            android:textColor="@android:color/white"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -85,5 +96,13 @@
         android:text="Acessar"
         android:textSize="14sp"
         android:theme="@style/botaoPadrao" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="Esqueceu a senha?"
+        android:textSize="12sp" />
 
 </LinearLayout>

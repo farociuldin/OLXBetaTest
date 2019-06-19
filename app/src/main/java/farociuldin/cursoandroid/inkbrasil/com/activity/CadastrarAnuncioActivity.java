@@ -1,4 +1,4 @@
-package farociuldin.cursoandroid.foundit.com.activity;
+package farociuldin.cursoandroid.inkbrasil.com.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -30,10 +30,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import farociuldin.cursoandroid.foundit.com.R;
-import farociuldin.cursoandroid.foundit.com.helper.ConfiguracaoFirebase;
-import farociuldin.cursoandroid.foundit.com.helper.Permissoes;
-import farociuldin.cursoandroid.foundit.com.model.Anuncio;
+import farociuldin.cursoandroid.inkbrasil.com.R;
+import farociuldin.cursoandroid.inkbrasil.com.helper.ConfiguracaoFirebase;
+import farociuldin.cursoandroid.inkbrasil.com.helper.Permissoes;
+import farociuldin.cursoandroid.inkbrasil.com.model.Anuncio;
 
 public class CadastrarAnuncioActivity extends AppCompatActivity
         implements View.OnClickListener {
