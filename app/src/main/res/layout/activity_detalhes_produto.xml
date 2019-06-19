@@ -82,6 +82,12 @@
         android:onClick="visualizarTelefone"
         android:text="Ver Telefone"
         android:theme="@style/botaoPadrao" />
+    <Button
+        android:id="@+id/buttonPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Perfil"
+        android:theme="@style/botaoPadrao" />
 
 
 </LinearLayout>

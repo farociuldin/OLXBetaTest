@@ -320,6 +320,9 @@ public class AnunciosActivity extends AppCompatActivity {
             case R.id.menu_anuncios :
                 startActivity(new Intent(getApplicationContext(),MeusAnunciosActivity.class));
                 break;
+            case R.id.menu_perfil :
+                startActivity(new Intent(getApplicationContext(),MeuPerfilActivity.class));
+                break;
         }
 
         return super.onOptionsItemSelected(item);

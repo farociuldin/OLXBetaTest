@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Ink Brasil</string>
-    <string name="title_activity_meus_anuncios">Meus Founds</string>
+    <string name="title_activity_meus_anuncios">Meus Inks</string>
     <string name="title_activity_recuperar_senha">Recuperar Senha</string>
 
     <string-array name="estados">

@@ -31,7 +31,7 @@ public class DetalhesProdutoActivity extends AppCompatActivity {
 
         //Configurar toolbar
 
-        getSupportActionBar().setTitle("Detalhe do achado");
+        getSupportActionBar().setTitle("Detalhe do Ink");
 
         //Incializar componentes de interface
         inicializarComponentes();

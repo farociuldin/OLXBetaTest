@@ -13,20 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.ForgotPassActivity"
-            android:label="@string/title_activity_recuperar_senha"></activity>
+        <activity android:name=".activity.MeuPerfilActivity"
+            android:parentActivityName=".activity.AnunciosActivity"></activity>
         <activity
-            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.DetalhesProdutoActivity"
-            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity"></activity>
+            android:name=".activity.ForgotPassActivity"
+            android:label="@string/title_activity_recuperar_senha"
+            android:parentActivityName=".activity.CadastroActivity"/>
         <activity
-            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.CadastrarAnuncioActivity"
-            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.MeusAnunciosActivity" />
+            android:name=".activity.DetalhesProdutoActivity"
+            android:parentActivityName=".activity.AnunciosActivity" />
         <activity
-            android:name="farociuldin.cursoandroid.inkbrasil.com.activity.MeusAnunciosActivity"
+            android:name=".activity.CadastrarAnuncioActivity"
+            android:parentActivityName=".activity.MeusAnunciosActivity" />
+        <activity
+            android:name=".activity.MeusAnunciosActivity"
             android:label="@string/title_activity_meus_anuncios"
-            android:parentActivityName="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity"
+            android:parentActivityName=".activity.AnunciosActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.CadastroActivity">
+        <activity android:name=".activity.CadastroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +39,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </activity>
-        <activity android:name="farociuldin.cursoandroid.inkbrasil.com.activity.AnunciosActivity" />
+        <activity android:name=".activity.AnunciosActivity" />
     </application>
 
 </manifest>
